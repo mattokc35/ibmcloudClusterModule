@@ -29,3 +29,12 @@ variable "subnet_id" {
 variable "cluster_name" {
     type = string
 }
+
+variable "kube_version" {
+    type = string
+    default = "1.23.12"
+}
+
+variable "flavor" {
+    type = string
+}
