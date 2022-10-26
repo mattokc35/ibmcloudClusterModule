@@ -41,5 +41,5 @@ variable "flavor" {
 
 output "cluster_name" {
     type = string
-    value = ibm_container_vpc_cluster.cluster.name
+    value = var.cluster_name
 }
