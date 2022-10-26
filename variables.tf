@@ -38,3 +38,8 @@ variable "kube_version" {
 variable "flavor" {
     type = string
 }
+
+output "cluster_name" {
+    type = string
+    value = ibm_container_vpc_cluster.cluster.name
+}
