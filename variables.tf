@@ -22,7 +22,10 @@ variable "worker_count" {
     default = "3"
 }
 
-variable "subnet_id" {
+variable "subnet1_id" {
+    type = string
+}
+variable "subnet2_id" {
     type = string
 }
 
@@ -37,4 +40,8 @@ variable "kube_version" {
 
 variable "flavor" {
     type = string
+}
+
+output "cluster_name" {
+    value = var.cluster_name
 }
